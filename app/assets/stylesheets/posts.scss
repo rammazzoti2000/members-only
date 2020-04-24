@@ -5,6 +5,7 @@
 html {
   font-size: 65%;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 #notice {
@@ -28,7 +29,7 @@ html {
   .user_hello {
     display: flex;
     flex-flow: row-reverse;
-    width: 20%;
+    width: auto;
     justify-content: space-between;
     align-items: center;
     font-size: 1.8rem;
@@ -40,6 +41,7 @@ html {
       background-color: rgb(230, 64, 97);
       padding: 10px;
       border-radius: 2px;
+      margin-left: 5px;
 
     }
   }
