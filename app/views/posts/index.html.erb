@@ -1,35 +1,51 @@
 <p id="notice"><%= notice %></p>
+<div class="posts-table">
+  <% if current_user %>
+    <div class="user_hello">
+      <%= link_to 'Sign-out', destroy_user_session_path, method: :delete %>
+      <h4>Hello! <%=current_user.name %></h4>
+    </div>
+  <% else %>
+    <div class="but-wrapper">
+      <%= link_to 'Sign-in', new_user_session_path %>
+      <%= link_to 'Sign-up', new_user_registration_path %>
+    </div>
+  <% end %>
 
-<% if current_user %>
-  <%= link_to 'Sign-out', destroy_user_session_path, method: :delete %>
-  <h4>Helo! <%=current_user.name %></h4>
-<% else %>
-  <%= link_to 'Sign-in', new_user_session_path %>
-  <%= link_to 'Sign-up', new_user_registration_path %>
-<% end %>
-<h1>Posts</h1>
+  <div class="main-table">
+    <h1>Posts</h1>
+    <table>
+      <thead>
+        <tr class="header-body">
+          <th class="th-1 table-header">Post</th>
+          <th class="th-2 table-header">User</th>
+        </tr>
+      </thead>
 
-<table>
-  <thead>
-    <tr>
-      <th>Post</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <tbody class="tbody">
+        <% @posts.each do |post| %>
+          <tr class="header-body">
+            <td class="column-post-user">
+              <%= post.post %>
+              <hr>
+            </td>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.post %></td>
-        <% if user_signed_in? %>
-          <td><%= post.user.name %></td>
+            <% if user_signed_in? %>
+              <td class="column-post-user">
+                <%= post.user.name %>
+                <hr>
+              </td>
+            <% end %>
+
+          </tr>
         <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      </tbody>
 
-<br>
+    </table>
 
-<%= link_to 'New Post', new_post_path %>
+    <br>
+
+  <%= link_to 'New Post', new_post_path, class:"new-post" %>
+
+  </div>
+</div>
