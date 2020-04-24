@@ -1,5 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<% if user_signed_in? %>
+  <%= link_to 'Sign-out', destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to 'Sign-in', new_user_session_path %>
+  <%= link_to 'Sign-up', new_user_registration_path %>
+<% end %>
+<h4>Helo! <%=current_user.name %></h4>
 <h1>Posts</h1>
 
 <table>
@@ -15,10 +22,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.post %></td>
-        <td><%= post.user_id %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= post.user.name %></td>
       </tr>
     <% end %>
   </tbody>
