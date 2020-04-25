@@ -1,5 +1,8 @@
-<h1>New Post</h1>
+<div class="newpost-body">
+  <h1>New Post</h1>
 
-<%= render 'form', post: @post %>
-
-<%= link_to 'Back', posts_path %>
+  <div class="text-area">
+    <%= render 'form', post: @post %>
+    <%= link_to 'Back', posts_path, class:"back-button" %>
+  </div>
+</div>

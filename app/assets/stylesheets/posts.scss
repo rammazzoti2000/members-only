@@ -10,7 +10,7 @@ html {
 
 #notice {
   font-size: 1.8rem;
-  color:  rgb(230, 64, 97);
+  color: rgb(230, 64, 97);
   font-weight: 800;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
@@ -21,11 +21,12 @@ html {
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin: 1.5% auto 0;
+  margin: 1.5% auto 2%;
   padding: 30px;
   border: 1px;
   border-radius: 5px;
   box-shadow: 3px 5px 12px 4px rgba(0, 0, 0, 0.5);
+  
   .user_hello {
     display: flex;
     flex-flow: row-reverse;
@@ -42,7 +43,6 @@ html {
       padding: 10px;
       border-radius: 2px;
       margin-left: 5px;
-
     }
   }
 
