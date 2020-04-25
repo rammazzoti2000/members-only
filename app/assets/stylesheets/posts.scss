@@ -1,0 +1,84 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+html {
+  font-size: 65%;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+#notice {
+  font-size: 1.8rem;
+  color: rgb(230, 64, 97);
+  font-weight: 800;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.posts-table {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 1.5% auto 2%;
+  padding: 30px;
+  border: 1px;
+  border-radius: 5px;
+  box-shadow: 3px 5px 12px 4px rgba(0, 0, 0, 0.5);
+  
+  .user_hello {
+    display: flex;
+    flex-flow: row-reverse;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    color: rgb(88, 88, 88);
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: rgb(230, 64, 97);
+      padding: 10px;
+      border-radius: 2px;
+      margin-left: 5px;
+    }
+  }
+
+  .but-wrapper {
+    align-self: flex-end;
+  }
+
+  .but-wrapper a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(88, 88, 88);
+    border-radius: 2px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 4px
+  }
+
+  .main-table {
+    margin-top: 3%;
+    width: 50%;
+    font-size: 2rem;
+    color: rgb(88, 88, 88);
+    text-align: center;
+
+    table {
+      width: 100%;
+    }
+
+    .new-post {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      background-color: rgb(88, 88, 88);
+      border-radius: 2px;
+    }
+  }
+}
+

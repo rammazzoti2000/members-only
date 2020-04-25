@@ -1,0 +1,149 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .alert {
+  font-size: 1.8rem;
+  color: rgb(230, 64, 97);
+  font-weight: 800;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.main-body,
+.newpost-body {
+  width: 80%;
+  margin: 1.5% auto 0;
+  box-shadow: 3px 5px 12px 4px rgba(0, 0, 0, 0.5);
+  padding: 55px;
+  border-radius: 5px;
+
+  h1,
+  h2 {
+    margin-top: 3%;
+    font-size: 3rem;
+    color: #585858;
+    text-align: center;
+  }
+
+  .form-body,
+  .text-area {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 2rem;
+    color: #585858;
+    .back-button {
+      text-decoration: none;
+      color: rgb(88, 88, 88);
+      font-weight: 600;
+    }
+
+    input {
+      outline: none;
+    }
+
+    .new_user {
+      width: auto;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      .checkbox {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+
+        .input_check {
+          height: 20px;
+          width: 20px;
+          margin-right: 5px;
+        }
+      }
+
+      .field {
+        width: 100%;
+        margin-bottom: 15px;
+
+        input {
+          width: 100%;
+          height: 28px;
+          border-radius: 3px;
+          border: 2px solid rgba(88, 88, 88, 0.6);
+          padding-left: 10px;
+          font-size: 1.5rem;
+        }
+      }
+
+      .actions {
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        .login-button {
+          border: none;
+          border-radius: 2px;
+          background-color: rgb(88, 88, 88);
+          color: white;
+          outline: none;
+          padding: 8px;
+          width: 50%;
+          font-size: 1.6rem;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+        a {
+          text-decoration: none;
+          color: rgb(230, 64, 97);
+          font-size: 2.2rem;
+          font-weight: 600;
+          align-self: center;
+        }
+      }
+    }
+
+    .forgot-password {
+      font-size: 1.8rem;
+      margin-left: 20px;
+
+      a {
+        text-decoration: none;
+        color: rgb(88, 88, 88);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .text-body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    textarea {
+      width: 300px;
+      height: 100px;
+      border-radius: 5px;
+      border: 2px solid rgba(88, 88, 88, 0.6);
+      outline: none;
+      padding: 5px 7px;
+      font-size: 2rem;
+      color: rgb(70, 69, 69);
+      margin: 3px 0;
+    }
+  }
+}
