@@ -96,8 +96,8 @@ This project was built using these technologies.
 👤 **Roman Nikolaev** 
     
 - LinkedIn: [Roman Nikolaev](https://www.linkedin.com/in/roman-nikolaev-65b639197/) - 
-- GitHub: [@rammazzoti2000](https://github.com/rammazzoti2000)
-- E-mail: rammazzoti2000@gmail.com
+- GitHub: [@vzdrizhni](https://github.com/vzdrizhni)
+- E-mail: vzdrizhni@gmail.com
 
 👤 **Alexandru Bangau**
 
