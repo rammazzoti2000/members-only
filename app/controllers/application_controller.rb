@@ -1,8 +1,6 @@
 class ApplicationController < ActionController::Base
   def signed_in_only!
-    if !current_user
-      redirect_to  new_user_session_path
-    end
+    redirect_to new_user_session_path unless current_user
   end
 
   before_action :configure_permitted_parameters, if: :devise_controller?
@@ -10,7 +8,6 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :user_name])
+    devise_parameter_sanitizer.permit(:sign_up, keys: %i[name user_name])
   end
-
 end
