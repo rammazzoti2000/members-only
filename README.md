@@ -54,11 +54,11 @@
 
 This project consists of using the [Devise gem](https://github.com/heartcombo/devise) to have a first approach at authentication in rails. It is application that allows users to create posts and the authors of the posts are displayed only if, you as a User, are logged in.
 
-[![Login]][login]
-[![Sign Up]][signup]
-[![New Post]][newpost]
-[![SignedIn Posts]][signedin-posts]
-[![SignedOut Posts]][signedout-posts]
+![Login](app/assets/images/login.png)
+![Sign Up](app/assets/images/signup.png)
+![New Post](app/assets/images/newpost.png)
+![SignedIn Posts](app/assets/images/signedin-posts.png)
+![SignedOut Posts](app/assets/images/signedout-posts.png)
 
 <!-- INSTALLATION -->
 ## Installation
@@ -123,11 +123,6 @@ This project was built using these technologies.
 [stars-url]: https://github.com/rammazzoti2000/members-only/stargazers
 [issues-shield]: https://img.shields.io/github/issues/rammazzoti2000/members-only.svg?style=flat-square
 [issues-url]: https://github.com/rammazzoti2000/members-only/issues
-[login]: app/assets/images/login.png
-[signup]: app/assets/images/signup.png
-[newpost]: app/assets/images/newpost.png
-[signedin-posts]: app/assets/images/signedin-posts.png
-[signeout-posts]: app/assets/images/signedout-posts.png
 
 ## 📝 License
 
